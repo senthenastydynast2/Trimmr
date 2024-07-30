@@ -38,12 +38,12 @@ class TrimmrApp:
         # Instructions
         self.instructions = tk.Label(self.sidebar, text=(
             "Controls:\n\n"
-            "- Scroll Wheel: +/-\n\n"
+            "- Scroll Wheel: +/- Zoom\n\n"
             "- Left Shift: Toggle frame size between square and vertical.\n\n"
             "- Left Click: Save trim and move to next image.\n\n"
             "- Ctrl+Left Click: Save trim without changing image.\n\n"
-            "- Ctrl+Scroll: Faster zoom.\n\n"
-            "- Esc: Minimizes."
+            "- Ctrl+Scroll: Faster zoom (Currently not working).\n\n"
+            "- Esc: Minimize app."
         ), bg='white', justify=tk.LEFT, anchor='w', padx=10, pady=15, font=("Arial", 12))
         self.instructions.pack(pady=20, fill=tk.X)
         
