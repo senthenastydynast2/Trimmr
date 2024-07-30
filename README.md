@@ -1,5 +1,5 @@
 # Trimmr
-No frills, straight-to-the-point image trimmer that prioritizes speed trimming without quality loss especially for trimming 1.5 datasets.
+No frills, straight-to-the-point image trimmer that prioritizes speed trimming without quality loss. Designed specifically from trimming datasets for Stable Diffusion 1.5 models.
 
 ![image](https://github.com/user-attachments/assets/133862d9-1c2a-45bc-81f1-562eaae39bfe)
 
