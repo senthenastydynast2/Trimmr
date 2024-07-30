@@ -152,6 +152,14 @@ class TrimmrApp:
 
     def on_mouse_click(self, event):
         self.save_trimmed_image()
+        self.current_image_index += 1
+        if self.current_image_index < len(self.selected_images):
+            self.show_image()
+        else:
+            messagebox.showinfo("Done", "All images have been processed.")
+            self.selected_images = []
+            self.current_image_index = 0
+            self.image_counter.config(text="")
 
     def on_ctrl_click(self, event):
         self.save_trimmed_image()
@@ -219,14 +227,7 @@ class TrimmrApp:
         resized_image.save(output_filename)
         
         # Move to the next image
-        self.current_image_index += 1
-        if self.current_image_index < len(self.selected_images):
-            self.show_image()
-        else:
-            messagebox.showinfo("Done", "All images have been processed.")
-            self.selected_images = []
-            self.current_image_index = 0
-            self.image_counter.config(text="")
+
 
 if __name__ == "__main__":
     root = tk.Tk()
